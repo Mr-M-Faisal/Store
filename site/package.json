@@ -1,0 +1,17 @@
+{
+  "name": "techvault-store",
+  "version": "1.0.0",
+  "description": "TechVault - Premium Digital Electronics E-commerce Store",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client\""
+  },
+  "keywords": ["ecommerce", "mern", "react", "nodejs", "mongodb"],
+  "author": "TechVault",
+  "license": "MIT"
+}
